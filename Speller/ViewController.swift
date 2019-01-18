@@ -32,8 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 		
 		setAnswersVisible(visibility: false)
 		textField.delegate = self
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 		
 		synth.delegate = self
 		loadDictionary()
@@ -145,7 +145,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 	
 	@objc func keyboardWillShow(notification: NSNotification) {
 		let info = notification.userInfo!
-		let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+		let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
 		
 		UIView.animate(withDuration: 0.1, animations: { () -> Void in
 			self.bottomConstraint.constant = keyboardFrame.size.height - self.view.safeAreaInsets.bottom
