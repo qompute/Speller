@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 	}
 	
 	private func loadDictionary() {
-		if let path = Bundle.main.path(forResource: "dictionary", ofType: "txt") {
+		if let path = Bundle.main.path(forResource: "dictionary", ofType: "tsv") {
 			do {
 				let data = try String(contentsOfFile: path, encoding: .utf8)
 				let lines = data.components(separatedBy: .newlines)

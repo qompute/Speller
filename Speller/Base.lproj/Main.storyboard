@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,13 +110,13 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VBj-wu-uQE" userLabel="Buttons Stack View">
-                                <rect key="frame" x="0.0" y="44" width="375" height="168"/>
+                                <rect key="frame" x="18.666666666666657" y="44" width="337.66666666666674" height="168"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k03-1s-HrE" userLabel="Left Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337.66666666666669" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e56-Du-1rj">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="337.66666666666669" height="36"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Hear Word"/>
                                                 <connections>
@@ -125,7 +124,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSU-Ba-Bie">
-                                                <rect key="frame" x="0.0" y="44" width="375" height="36"/>
+                                                <rect key="frame" x="0.0" y="44" width="337.66666666666669" height="36"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Part of Speech"/>
                                                 <connections>
@@ -135,10 +134,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YGJ-qu-82e" userLabel="Right Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="88" width="337.66666666666669" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-kg-HdR">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="337.66666666666669" height="36"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Definition"/>
                                                 <connections>
@@ -146,7 +145,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nt9-hr-ANi">
-                                                <rect key="frame" x="0.0" y="44" width="375" height="36"/>
+                                                <rect key="frame" x="0.0" y="44" width="337.66666666666669" height="36"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Origin"/>
                                                 <connections>
@@ -173,15 +172,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSD-9C-UBt" secondAttribute="trailing" id="FPM-Yh-ufb"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GAG-Mf-ePx"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VBj-wu-uQE" secondAttribute="bottom" constant="8" symbolic="YES" id="K9w-Xs-5IS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VBj-wu-uQE" secondAttribute="trailing" id="NIy-sU-qBy"/>
+                            <constraint firstItem="VBj-wu-uQE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Mls-Ym-97e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rv-AZ-U12" secondAttribute="trailing" id="NkI-0n-UHD"/>
                             <constraint firstItem="gio-MI-vZ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OHL-m4-PD0"/>
+                            <constraint firstItem="VBj-wu-uQE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OgJ-b8-lQ0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2bT-r6-Qh9" secondAttribute="bottom" id="UWh-nI-cMx"/>
                             <constraint firstItem="gio-MI-vZ1" firstAttribute="top" secondItem="cSD-9C-UBt" secondAttribute="bottom" id="Yg7-e0-Uy4"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a3V-tI-MMO"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anO-ZL-9Vj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gio-MI-vZ1" secondAttribute="trailing" id="ctg-aS-Ree"/>
-                            <constraint firstItem="VBj-wu-uQE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hmJ-3X-dz2"/>
                             <constraint firstItem="VBj-wu-uQE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j26-dT-duf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2bT-r6-Qh9" secondAttribute="trailing" id="jGY-dJ-7QW"/>
                             <constraint firstItem="2bT-r6-Qh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kME-YP-gdH"/>

@@ -1,0 +1,39 @@
+
+/* Class = "UITextField"; placeholder = "Type your answer here..."; ObjectID = "2bT-r6-Qh9"; */
+"2bT-r6-Qh9.placeholder" = "Type your answer here...";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "44m-Ry-WnC"; */
+"44m-Ry-WnC.text" = "Label";
+
+/* Class = "UILabel"; text = "Your Answer:"; ObjectID = "6bE-wN-61A"; */
+"6bE-wN-61A.text" = "Your Answer:";
+
+/* Class = "UIButton"; normalTitle = "New Word"; ObjectID = "6rv-AZ-U12"; */
+"6rv-AZ-U12.normalTitle" = "New Word";
+
+/* Class = "UILabel"; text = "Correct Answer:"; ObjectID = "E2b-ZZ-iSg"; */
+"E2b-ZZ-iSg.text" = "Correct Answer:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Xie-lI-Xsy"; */
+"Xie-lI-Xsy.text" = "Label";
+
+/* Class = "UILabel"; text = "Correct!"; ObjectID = "cSD-9C-UBt"; */
+"cSD-9C-UBt.text" = "Correct!";
+
+/* Class = "UIButton"; normalTitle = "Hear Word"; ObjectID = "e56-Du-1rj"; */
+"e56-Du-1rj.normalTitle" = "Hear Word";
+
+/* Class = "UILabel"; text = "Definition"; ObjectID = "nWD-hH-5JR"; */
+"nWD-hH-5JR.text" = "Definition";
+
+/* Class = "UIButton"; normalTitle = "Origin"; ObjectID = "nt9-hr-ANi"; */
+"nt9-hr-ANi.normalTitle" = "Origin";
+
+/* Class = "UIButton"; normalTitle = "Definition"; ObjectID = "q7y-kg-HdR"; */
+"q7y-kg-HdR.normalTitle" = "Definition";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "shW-yz-AI3"; */
+"shW-yz-AI3.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Part of Speech"; ObjectID = "wSU-Ba-Bie"; */
+"wSU-Ba-Bie.normalTitle" = "Part of Speech";
