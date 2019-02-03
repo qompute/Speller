@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 		if let path = Bundle.main.path(forResource: "dictionary", ofType: "tsv") {
 			do {
 				let data = try String(contentsOfFile: path, encoding: .utf8)
-				let lines = data.components(separatedBy: .newlines)
+				let lines = data.components(separatedBy: .newlines).dropFirst()
 				for entry in lines {
 					let parts = entry.components(separatedBy: "\t")
 					if parts.count == 4 {
