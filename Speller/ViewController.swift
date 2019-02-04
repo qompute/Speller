@@ -117,7 +117,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 			textField.resignFirstResponder()
 			if textField?.text != nil, currentWord.word.caseInsensitiveCompare(textField.text!) == .orderedSame {
 				correctIndicator.text = "Correct!"
-				correctIndicator.textColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
+				correctIndicator.textColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
 				correctSpellingLabel.text = currentWord.word
 				yourSpellingLabel.text = textField.text!
 			}
