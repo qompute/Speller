@@ -113,7 +113,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VBj-wu-uQE" userLabel="Buttons Stack View">
-                                <rect key="frame" x="18.666666666666657" y="44" width="337.66666666666674" height="168"/>
+                                <rect key="frame" x="18.666666666666657" y="76" width="337.66666666666674" height="168"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k03-1s-HrE" userLabel="Left Buttons Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="337.66666666666669" height="80"/>
@@ -123,7 +123,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="0.47570633559999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Hear Word">
-                                                    <color key="titleColor" red="0.90317315924657537" green="0.50882373925597624" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="disabled">
                                                     <color key="titleColor" red="1" green="0.82026139187486202" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -137,7 +137,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="0.47570633559999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Part of Speech">
-                                                    <color key="titleColor" red="0.90317315919999996" green="0.50882373930000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="disabled">
                                                     <color key="titleColor" red="1" green="0.82026139190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,7 +156,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="0.47570633559999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Definition">
-                                                    <color key="titleColor" red="0.90317315919999996" green="0.50882373930000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="disabled">
                                                     <color key="titleColor" red="1" green="0.82026139190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,7 +170,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="0.47570633559999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Origin">
-                                                    <color key="titleColor" red="0.90317315919999996" green="0.50882373930000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <state key="disabled">
                                                     <color key="titleColor" red="1" green="0.82026139190000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,8 +184,14 @@
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqx-r1-lI9">
+                                <rect key="frame" x="9.3333333333333357" y="44" width="92" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.71291978228582098" green="0.82282988502554699" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.79457646036801277" green="0.86879521036801277" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6rv-AZ-U12" firstAttribute="top" secondItem="r61-xX-u5f" secondAttribute="bottom" constant="8" symbolic="YES" id="0Hl-V3-cI6"/>
                             <constraint firstItem="r61-xX-u5f" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gio-MI-vZ1" secondAttribute="bottom" constant="8" symbolic="YES" id="2g0-vs-5q0"/>
@@ -203,12 +209,15 @@
                             <constraint firstItem="VBj-wu-uQE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="Mls-Ym-97e"/>
                             <constraint firstItem="gio-MI-vZ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OHL-m4-PD0"/>
                             <constraint firstItem="VBj-wu-uQE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OgJ-b8-lQ0"/>
+                            <constraint firstItem="tqx-r1-lI9" firstAttribute="leading" secondItem="6rv-AZ-U12" secondAttribute="leading" id="SyU-io-Wqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2bT-r6-Qh9" secondAttribute="bottom" id="UWh-nI-cMx"/>
                             <constraint firstItem="gio-MI-vZ1" firstAttribute="top" secondItem="cSD-9C-UBt" secondAttribute="bottom" id="Yg7-e0-Uy4"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a3V-tI-MMO"/>
                             <constraint firstItem="cSD-9C-UBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anO-ZL-9Vj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tqx-r1-lI9" secondAttribute="trailing" id="cWA-5E-Vdg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gio-MI-vZ1" secondAttribute="trailing" id="ctg-aS-Ree"/>
-                            <constraint firstItem="VBj-wu-uQE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j26-dT-duf"/>
+                            <constraint firstItem="VBj-wu-uQE" firstAttribute="top" secondItem="tqx-r1-lI9" secondAttribute="bottom" constant="8" symbolic="YES" id="edD-yw-fHS"/>
+                            <constraint firstItem="tqx-r1-lI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gd5-nl-VM2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2bT-r6-Qh9" secondAttribute="trailing" id="jGY-dJ-7QW"/>
                             <constraint firstItem="2bT-r6-Qh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kME-YP-gdH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VBj-wu-uQE" secondAttribute="trailing" constant="452" id="kxA-AG-3iF">
@@ -258,6 +267,7 @@
                         <outlet property="definitionIndicator" destination="nWD-hH-5JR" id="hZh-3G-vy8"/>
                         <outlet property="definitionLabel" destination="44m-Ry-WnC" id="VDH-dJ-644"/>
                         <outlet property="newWordButton" destination="6rv-AZ-U12" id="1Xm-MD-n26"/>
+                        <outlet property="scoreLabel" destination="tqx-r1-lI9" id="PHX-mK-xlS"/>
                         <outlet property="textField" destination="2bT-r6-Qh9" id="UUk-E5-QEI"/>
                         <outlet property="yourAnswerLabel" destination="6bE-wN-61A" id="Pj0-KG-HyL"/>
                         <outlet property="yourSpellingLabel" destination="Xie-lI-Xsy" id="UCE-11-p8Y"/>

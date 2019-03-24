@@ -11,6 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizerDelegate {
 	
+	@IBOutlet weak var scoreLabel: UILabel!
 	@IBOutlet weak var correctIndicator: UILabel!
 	@IBOutlet weak var correctAnswerLabel: UILabel!
 	@IBOutlet weak var correctSpellingLabel: UILabel!
@@ -25,6 +26,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 	
 	var dictionary = [Word]()
 	var currentWord: Word!
+	var numAttempts = 0
+	var numCorrect = 0
 	let synth = AVSpeechSynthesizer()
 
 	override func viewDidLoad() {
@@ -120,6 +123,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 				correctIndicator.textColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
 				correctSpellingLabel.text = currentWord.word
 				yourSpellingLabel.text = textField.text!
+				numCorrect += 1
 			}
 			else if textField?.text != nil {
 				correctIndicator.text = "Incorrect."
@@ -130,6 +134,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVSpeechSynthesizer
 			definitionLabel.text = currentWord.dictionaryDefinition()
 			setAnswersVisible(visibility: true)
 			textField.isEnabled = false
+			numAttempts += 1
+			scoreLabel.text = "Score: \(numCorrect)/\(numAttempts)"
 			return false
 		}
 		return true
